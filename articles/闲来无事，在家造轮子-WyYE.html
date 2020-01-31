@@ -196,11 +196,10 @@
 <script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.18.0/build/highlight.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script>
 <script>
-    hljs.initHighlightingOnLoad();
-</script>
-<script>
     $$ = mdui.JQ;
     $$(function () {
+        hljs.initHighlightingOnLoad();
+        mdui.mutation();
         var gitalk = new Gitalk({
             clientID: '5ff83afe6227f383f32c',
             clientSecret: '7ca688999b8ff8101d56d1d7b8a365f48a55cb40',
