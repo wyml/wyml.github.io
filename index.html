@@ -23,6 +23,26 @@
         body {
             background: #F5F5F5;
         }
+
+        .bottom {
+            position: relative;
+            overflow: hidden;
+            text-align: center;
+            color: rgba(255, 255, 255, 0.6) !important;
+            font-size: 13px;
+        }
+
+        .bottom a {
+            color: rgba(255, 255, 255, 0.4);
+            text-decoration: none;
+            outline: none;
+            border-bottom: 1px dotted #f1f3fa;
+        }
+
+        .bottom a:hover {
+            color: rgba(255, 255, 255, 0.9);
+            text-decoration: none;
+        }
     </style>
 </head>
 
@@ -127,6 +147,18 @@ WyYE采用易语言作为编写语言（懒得去弄其他的了）搭配JS进�
 
 </div>
 
+    <div class="bottom">
+        <div class="bottom-licenses mdui-p-y-2 mdui-color-theme-400"
+            style="color: rgba(255, 255, 255, 0.6) !important;">
+            博客内容遵循 - <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh">知识共享 署名 - 非商业性 - 相同方式共享 4.0
+                国际协议</a>
+        </div>
+        <div class="bottom-copyright mdui-p-y-2 mdui-color-theme-700"
+            style="color: rgba(255, 255, 255, 0.6) !important;">
+            <div>藍某人 ? 2016-2020 · <a href="http://beian.miit.gov.cn/">桂ICP备16007573号-1</a></div>
+            <div style="margin-top: 0.5rem;">Powered By <a href="/">WyYBlogEditor</a> Theme <a href="/">MDMY</a></div>
+        </div>
+    </div>
     
     <script src="https://wyml.github.io/assets/js/mdui.min.js"></script>
     {-block name="js"}
