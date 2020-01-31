@@ -124,6 +124,30 @@
                         <span class="mdui-chip-title">藍某人</span>
                     </div>
                 </div>
+
+                <div class="admire mdui-text-center">
+                    <button class="mdui-color-red-700 mdui-ripple mdui-hoverable"
+                        mdui-dialog="{target: '#admireDialog'}">赏</button>
+                </div>
+                <div class="mdui-dialog" id="admireDialog">
+                    <div class="mdui-dialog-title">请我喝瓶水呗？</div>
+                    <div class="mdui-dialog-content">
+                        <div class="mdui-tab mdui-tab-centered" mdui-tab>
+                            <a href="#tab-wechat" class="mdui-ripple">微信</a>
+                            <a href="#tab-alipay" class="mdui-ripple">支付宝</a>
+                        </div>
+                        <div id="tab-wechat">
+                            <img class="mdui-img-fluid" src="https://wyml.github.io/assets/images/wechat.png" alt="wechat">
+                        </div>
+                        <div id="tab-alipay">
+                            <img class="mdui-img-fluid" src="https://wyml.github.io/assets/images/alipay.jpg" alt="alipay">
+                        </div>
+                    </div>
+                    <div class="mdui-dialog-actions">
+                        <button class="mdui-btn mdui-ripple" mdui-dialog-close>下次一定</button>
+                    </div>
+                </div>
+
             </div>
         </div>
     </div>
