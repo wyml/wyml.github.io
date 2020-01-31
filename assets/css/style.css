@@ -1,7 +1,7 @@
 .typing{white-space:nowrap;border-right:2px solid transparent;animation:typing 3.5s steps(15,end),blink-caret .75s step-end infinite;overflow:hidden}
 @keyframes typing{
 from{width:0}
-to{width:15em}
+to{width:100%}
 }
 @keyframes blink-caret{
 from,to{box-shadow:1px 0 0 0 transparent}
