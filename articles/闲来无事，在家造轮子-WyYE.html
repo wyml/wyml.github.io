@@ -5,11 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>MlTree</title>
+    <title>WyY'sBlog</title>
     <meta name="generator" content="WyYBlogEditor">
     <link rel="stylesheet" href="https://wyml.github.io/assets/css/mdui.min.css">
     <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.18.0/build/styles/default.min.css">
     
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css">
 <link rel="stylesheet" href="https://wyml.github.io/assets/css/style.css">
 <style>
     .back-block {
@@ -37,11 +38,14 @@
         }
 
         .bottom {
-            position: relative;
+            position: absolute;
             overflow: hidden;
             text-align: center;
             color: rgba(255, 255, 255, 0.6) !important;
             font-size: 13px;
+            bottom: 0;
+            left: 0;
+            right: 0;
         }
 
         .bottom a {
@@ -63,7 +67,7 @@
         <div class="mdui-toolbar mdui-color-theme">
             <a href="javascript:;" class="mdui-btn mdui-btn-icon" mdui-drawer="{target: '#drawer'}"><i
                     class="mdui-icon material-icons">menu</i></a>
-            <a href="/" class="mdui-typo-headline">MlTree</a>
+            <a href="/" class="mdui-typo-headline">WyY'sBlog</a>
             <div class="mdui-toolbar-spacer"></div>
         </div>
     </header>
@@ -181,13 +185,16 @@
     <div class="bottom">
         <div class="bottom-licenses mdui-p-y-2 mdui-color-theme-400"
             style="color: rgba(255, 255, 255, 0.6) !important;">
-            博客内容遵循 - <a target="_blank" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh">知识共享 署名 - 非商业性 - 相同方式共享 4.0
+            博客内容遵循 - <a target="_blank" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh">知识共享 署名 - 非商业性
+                - 相同方式共享 4.0
                 国际协议</a>
         </div>
         <div class="bottom-copyright mdui-p-y-2 mdui-color-theme-700"
             style="color: rgba(255, 255, 255, 0.6) !important;">
-            <div>藍某人 &copy; 2016-2020 · <a target="_blank" href="http://beian.miit.gov.cn/">桂ICP备16007573号-1</a></div>
-            <div style="margin-top: 0.5rem;">Powered By <a target="_blank" href="/">WyYBlogEditor</a> Theme <a target="_blank" href="/">MDMY</a></div>
+            <div>藍某人 &copy; 2016-2020 · <a target="_blank"
+                    href="http://beian.miit.gov.cn/">桂ICP备16007573号-1</a></div>
+            <div style="margin-top: 0.5rem;">Powered By <a target="_blank" href="/">WyYBlogEditor</a> Theme <a
+                    target="_blank" href="/">MDMY</a></div>
         </div>
     </div>
     
