@@ -32,6 +32,38 @@
         color: #fff;
         text-shadow: black;
     }
+
+    .typing {
+        width: 15em;
+        white-space: nowrap;
+        border-right: 2px solid transparent;
+        animation: typing 3.5s steps(15, end), blink-caret .75s step-end infinite;
+        overflow: hidden;
+    }
+
+    /* 打印效果 */
+    @keyframes typing {
+        from {
+            width: 0;
+        }
+
+        to {
+            width: 15em;
+        }
+    }
+
+    /* 光标闪啊闪 */
+    @keyframes blink-caret {
+
+        from,
+        to {
+            box-shadow: 1px 0 0 0 transparent;
+        }
+
+        50?
+            box-shadow: 1px 0 0 0;
+        }
+    }
 </style>
 <!-- 默认抽屉栏在左侧 -->
 <div class="mdui-drawer mdui-color-white mdui-drawer-full-height" id="drawer">
@@ -63,8 +95,8 @@
 
 <div class="content-heaer mdui-color-indigo mdui-m-b-2 mdui-valign">
     <div class="mdui-text-center mdui-center">
-        <h1 class="mdui-typo-display-1 mdui-m-t-0">WyY's Blog</h1>
-        <h5 class="mdui-typo-subheading-opacity">记录生活的美好</h5>
+        <h1 class="mdui-typo-display-1 mdui-m-t-0 typing">WyY's Blog</h1>
+        <h5 class="mdui-typo-subheading-opacity">记录生活的美好,一起发现创造</h5>
     </div>
 </div>
 
