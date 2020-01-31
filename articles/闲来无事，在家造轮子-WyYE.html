@@ -173,27 +173,50 @@
         </div>
     </div>
 </div>
-<script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.18.0/build/highlight.min.js"></script>
-<script>
-    hljs.initHighlightingOnLoad();
-</script>
+
+<!-- 评论容器 -->
+<div id="gitalk-container"></div>
+
 
     <div class="bottom">
         <div class="bottom-licenses mdui-p-y-2 mdui-color-theme-400"
             style="color: rgba(255, 255, 255, 0.6) !important;">
-            博客内容遵循 - <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh">知识共享 署名 - 非商业性 - 相同方式共享 4.0
+            博客内容遵循 - <a target="_blank" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh">知识共享 署名 - 非商业性 - 相同方式共享 4.0
                 国际协议</a>
         </div>
         <div class="bottom-copyright mdui-p-y-2 mdui-color-theme-700"
             style="color: rgba(255, 255, 255, 0.6) !important;">
-            <div>藍某人 &copy; 2016-2020 · <a href="http://beian.miit.gov.cn/">桂ICP备16007573号-1</a></div>
-            <div style="margin-top: 0.5rem;">Powered By <a href="/">WyYBlogEditor</a> Theme <a href="/">MDMY</a></div>
+            <div>藍某人 &copy; 2016-2020 · <a target="_blank" href="http://beian.miit.gov.cn/">桂ICP备16007573号-1</a></div>
+            <div style="margin-top: 0.5rem;">Powered By <a target="_blank" href="/">WyYBlogEditor</a> Theme <a target="_blank" href="/">MDMY</a></div>
         </div>
     </div>
     
     <script src="https://wyml.github.io/assets/js/mdui.min.js"></script>
     
+<script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.18.0/build/highlight.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script>
+<script>
+    hljs.initHighlightingOnLoad();
+</script>
+<script>
+    $$ = mdui.JQ;
+    $$(function () {
+        var gitalk = new Gitalk({
+            clientID: '5ff83afe6227f383f32c',
+            clientSecret: '7ca688999b8ff8101d56d1d7b8a365f48a55cb40',
+            repo: 'wyml.github.io',
+            owner: 'wyml',
+            admin: [
+                'wyml'
+            ],
+            id: location.pathname, // Ensure uniqueness and length less than 50
+            distractionFreeMode: true,
+            labels: ['BlogComment']
+        })
 
+        gitalk.render('gitalk-container')
+    })
+</script>
 
 </body>
 
