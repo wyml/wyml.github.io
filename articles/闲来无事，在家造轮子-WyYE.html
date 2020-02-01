@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>WyY'sBlog</title>
+    <meta name="generator" content="WyYBlogEditor">
+    <link rel="stylesheet" href="https://blog.kingsr.cc/assets/css/mdui.min.css">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.18.0/build/styles/default.min.css">
+    
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css">
+<link rel="stylesheet" href="https://blog.kingsr.cc/assets/css/style.css">
+<style>
+    .back-block {
+        height: 300px;
+    }
+
+    .post-copyright {
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+
+    .post-copyright>.content {
+        margin-bottom: 1em;
+        padding: 20px 30px;
+        word-break: break-all;
+        color: #727272;
+        background: #f1f3fa;
+        border-radius: 30px 30px 0;
+    }
+</style>
+
+    <style>
+        body {
+            background: #F5F5F5;
+        }
+
+        .bottom {
+            position: relative;
+            overflow: hidden;
+            text-align: center;
+            color: rgba(255, 255, 255, 0.6) !important;
+            font-size: 13px;
+            bottom: 0;
+            left: 0;
+            right: 0;
+        }
+
+        .bottom a {
+            color: rgba(255, 255, 255, 0.4);
+            text-decoration: none;
+            outline: none;
+            border-bottom: 1px dotted #f1f3fa;
+        }
+
+        .bottom a:hover {
+            color: rgba(255, 255, 255, 0.9);
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body class="mdui-theme-primary-indigo mdui-theme-accent-red mdui-appbar-with-toolbar mdui-drawer-body-left">
+    <header class="mdui-appbar mdui-appbar-fixed mdui-appbar-inset" mdui-headroom>
+        <div class="mdui-toolbar mdui-color-theme">
+            <a href="javascript:;" class="mdui-btn mdui-btn-icon" mdui-drawer="{target: '#drawer'}"><i
+                    class="mdui-icon material-icons">menu</i></a>
+            <a href="/" class="mdui-typo-headline">WyY'sBlog</a>
+            <div class="mdui-toolbar-spacer"></div>
+        </div>
+    </header>
+    
+<div class="mdui-drawer mdui-color-white mdui-drawer-full-height" id="drawer">
+    <div style="background: url(https://blog.kingsr.cc/assets/images/brand.jpg);">
+        <div style="padding: 30px;">
+            <img style="border:2px solid white;" class="mdui-img-circle" width="84" src="https://q1.qlogo.cn/g?b=qq&nk=1143524493&s=5" alt="avatar">
+            <h1 class="mdui-typo-headline mdui-text-color-white-text">藍某人</h1>
+            <a href="mailto:i@kingsr.cc">
+                <h5 class="mdui-subheadline" style="margin-top: 0;">i@kingsr.cc</h5>
+            </a>
+        </div>
+    </div>
+    <ul class="mdui-list" mdui-collapse="{accordion: true}">
+
+        <a href="/">
+            <li class="mdui-list-item mdui-ripple">
+                <i class="mdui-list-item-icon mdui-icon material-icons">home</i>
+                <div class="mdui-list-item-content">Home</div>
+            </li>
+        </a>
+
+        <li class="mdui-list-item mdui-ripple">
+            <i class="mdui-list-item-icon mdui-icon material-icons">list</i>
+            <div class="mdui-list-item-content">Timeline</div>
+        </li>
+
+    </ul>
+</div>
+<div class="back-block mdui-color-theme mdui-valign">
+    <div class="mdui-text-center mdui-center">
+        <h1 class="mdui-m-a-0 ">闲来无事，在家造轮子-WyYE</h1>
+    </div>
+</div>
+<div class="mdui-container" style="position: relative;top:-100px;">
+    <div class="mdui-row">
+        <div class="mdui-col-xs-12">
+            <div class="mdui-card" style="border-radius: 5px;">
+                <div class="mdui-card-header">
+                    <div class="mdui-card-header-title" style="margin-left: 0;">2020-01-31 13:29:44</div>
+                </div>
+
+                <div class="mdui-card-content mdui-typo" style="font-size: 16px;">
+                    <h1 id="wyye">WyYE</h1>
+<blockquote>
+<p>WyYE是一款用易语言配合JS编写的一款静态BLOG生成器。他的工作方式类似于Hexo，能够在一定情况下配合JS或者DLL配合生成静态博客。 同时支持部署至Github、Gitee等Git托管网站上。</p>
+</blockquote>
+<h2 id="前言">前言</h2>
+<p>没错！这就是我新造的轮子。最近肺炎的情况让我在家无所事事。刚好想写Blog，苦于我原来手贱，清空了我博客上的内容。。。于是就诞生了它！</p>
+<p>至于为什么不用Hexo，我只能说我真的用不习惯。而且主题各种卡死。</p>
+<h2 id="构架">构架</h2>
+<p>WyYE采用易语言作为编写语言（懒得去弄其他的了）搭配JS进行渲染以及页面的构建。
+同时后续还会开通JS插件等等实用的功能。</p>
+<p><strong>这篇Blog就是用它生成的，并推送到了Github上</strong></p>
+<h2 id="开发过程吐槽">开发过程吐槽</h2>
+<h3 id="0x00">0x00</h3>
+<p>首先我想用WEBUI作为主要的UI，就发现易语言对这个方面的配合实在不行。好在能配合“浏览器”组件，实现简单的UI搭建。总算在一个晚上的摸索之后有了一个确切的方案。</p>
+<h3 id="0x01">0x01</h3>
+<p>模板渲染。这个真的无力吐槽啊！对于易语言来说，渲染数据真的太困难了。应该也是所有静态编程的通病吧。
+因为无法使用直接的数组循环以及变量搭配，我必须将所有的变量通过Json的方式转换，最后渲染。</p>
+<h2 id="截图预览">截图预览</h2>
+<p><img src="https://i.loli.net/2020/01/31/wHvKAmCpxk9Mneq.png" alt="main.png">
+<img src="https://i.loli.net/2020/01/31/bOVkLKmwYB7QIDz.png" alt="editor.png">
+<img src="https://i.loli.net/2020/01/31/ReQg2cxdOXVwFzv.png" alt="dos.png">
+<img src="https://i.loli.net/2020/01/31/Ytgm4hxoaQEXDuf.png" alt="目录结构.png"></p>
+<h2 id="下载">下载</h2>
+<p><a href="https://pan.kingsr.cc/s/9jsmd70c" title="网盘下载">网盘下载</a></p>
+
+                </div>
+
+                <div class="post-copyright mdui-m-y-5 mdui-typo">
+                    <div class="content">
+                        <span>最后更新时间：2020-01-31 13:29:44</span><br />
+                        <span>原始连接：<a href="https://blog.kingsr.cc/articles/闲来无事，在家造轮子-WyYE.html">https://blog.kingsr.cc/articles/闲来无事，在家造轮子-WyYE.html</a></span>
+                    </div>
+                    <div class="mdui-chip">
+                        <img class="mdui-chip-icon" src="https://q1.qlogo.cn/g?b=qq&nk=1143524493&s=5" />
+                        <span class="mdui-chip-title">藍某人</span>
+                    </div>
+                </div>
+
+                <div class="admire mdui-text-center">
+                    <button class="mdui-color-red-700 mdui-ripple mdui-hoverable"
+                        mdui-dialog="{target: '#admireDialog'}">赏</button>
+                </div>
+                <div class="mdui-dialog" id="admireDialog">
+                    <div class="mdui-dialog-title">请我喝瓶水呗？</div>
+                    <div class="mdui-dialog-content">
+                        <div class="mdui-tab mdui-tab-centered" mdui-tab>
+                            <a href="#tab-wechat" class="mdui-ripple">微信</a>
+                            <a href="#tab-alipay" class="mdui-ripple">支付宝</a>
+                        </div>
+                        <div id="tab-wechat">
+                            <img class="mdui-img-fluid" width="200px" src="https://blog.kingsr.cc/assets/images/wechat.png" alt="wechat">
+                        </div>
+                        <div id="tab-alipay">
+                            <img class="mdui-img-fluid" width="200px" src="https://blog.kingsr.cc/assets/images/alipay.jpg" alt="alipay">
+                        </div>
+                    </div>
+                    <div class="mdui-dialog-actions">
+                        <button class="mdui-btn mdui-ripple" mdui-dialog-close>下次一定</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- 评论容器 -->
+<div id="gitalk-container"></div>
+
+<div class="bottom">
+    <div class="bottom-licenses mdui-p-y-2 mdui-color-theme-400"
+        style="color: rgba(255, 255, 255, 0.6) !important;">
+        博客内容遵循 - <a target="_blank" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh">知识共享 署名 - 非商业性
+            - 相同方式共享 4.0
+            国际协议</a>
+    </div>
+    <div class="bottom-copyright mdui-p-y-2 mdui-color-theme-700"
+        style="color: rgba(255, 255, 255, 0.6) !important;">
+        <div>藍某人 &copy; 2016-2020 · <a target="_blank"
+                href="http://beian.miit.gov.cn/">桂ICP备16007573号-1</a></div>
+        <div style="margin-top: 0.5rem;">Powered By <a target="_blank" href="/">WyYBlogEditor</a> Theme <a
+                target="_blank" href="/">MDMY</a></div>
+    </div>
+</div>
+
+    
+    <script src="https://blog.kingsr.cc/assets/js/mdui.min.js"></script>
+    
+<script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.18.0/build/highlight.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script>
+<script>
+    $$ = mdui.JQ;
+    $$(function () {
+        hljs.initHighlightingOnLoad();
+        mdui.mutation();
+        var gitalk = new Gitalk({
+            clientID: '5ff83afe6227f383f32c',
+            clientSecret: '7ca688999b8ff8101d56d1d7b8a365f48a55cb40',
+            repo: 'wyml.github.io',
+            owner: 'wyml',
+            admin: [
+                'wyml'
+            ],
+            id: location.pathname, // Ensure uniqueness and length less than 50
+            distractionFreeMode: true,
+            labels: ['BlogComment']
+        })
+
+        gitalk.render('gitalk-container')
+    })
+</script>
+
+</body>
+
+</html>
