@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>WyY'sBlog</title>
+    <meta name="generator" content="WyYBlogEditor">
+    <link rel="stylesheet" href="https://blog.kingsr.cc/assets/css/mdui.min.css">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.18.0/build/styles/default.min.css">
+    
+<link rel="stylesheet" href="https://blog.kingsr.cc/assets/css/style.css">
+<style>
+    .back-block {
+        height: 300px;
+    }
+
+    .post-copyright {
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+
+    .post-copyright>.content {
+        margin-bottom: 1em;
+        padding: 20px 30px;
+        word-break: break-all;
+        color: #727272;
+        background: #f1f3fa;
+        border-radius: 30px 30px 0;
+    }
+
+    .timeline-date {
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        background: rgba(255, 255, 255, 0.2);
+        padding: 0.1rem;
+        padding-left: 0.3rem;
+        border-left: 3px solid #3f51b5;
+        font-size: 18px;
+    }
+
+    .timeline-content {}
+</style>
+
+    <style>
+        body {
+            background: #F5F5F5;
+        }
+
+        .bottom {
+            position: relative;
+            overflow: hidden;
+            text-align: center;
+            color: rgba(255, 255, 255, 0.6) !important;
+            font-size: 13px;
+            bottom: 0;
+            left: 0;
+            right: 0;
+        }
+
+        .bottom a {
+            color: rgba(255, 255, 255, 0.4);
+            text-decoration: none;
+            outline: none;
+            border-bottom: 1px dotted #f1f3fa;
+        }
+
+        .bottom a:hover {
+            color: rgba(255, 255, 255, 0.9);
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body class="mdui-theme-primary-indigo mdui-theme-accent-red mdui-appbar-with-toolbar mdui-drawer-body-left">
+    <header class="mdui-appbar mdui-appbar-fixed mdui-appbar-inset" mdui-headroom>
+        <div class="mdui-toolbar mdui-color-theme">
+            <a href="javascript:;" class="mdui-btn mdui-btn-icon" mdui-drawer="{target: '#drawer'}"><i
+                    class="mdui-icon material-icons">menu</i></a>
+            <a href="/" class="mdui-typo-headline">WyY'sBlog</a>
+            <div class="mdui-toolbar-spacer"></div>
+        </div>
+    </header>
+    
+<div class="mdui-drawer mdui-color-white mdui-drawer-full-height" id="drawer">
+    <div style="background: url(https://blog.kingsr.cc/assets/images/brand.jpg);">
+        <div style="padding: 30px;">
+            <img style="border:2px solid white;" class="mdui-img-circle" width="84" src="https://q1.qlogo.cn/g?b=qq&nk=1143524493&s=5" alt="avatar">
+            <h1 class="mdui-typo-headline mdui-text-color-white-text">藍某人</h1>
+            <a href="mailto:i@kingsr.cc">
+                <h5 class="mdui-subheadline" style="margin-top: 0;">i@kingsr.cc</h5>
+            </a>
+        </div>
+    </div>
+    <ul class="mdui-list" mdui-collapse="{accordion: true}">
+
+        <a href="/">
+            <li class="mdui-list-item mdui-ripple">
+                <i class="mdui-list-item-icon mdui-icon material-icons">home</i>
+                <div class="mdui-list-item-content">Home</div>
+            </li>
+        </a>
+
+        <li class="mdui-list-item mdui-ripple">
+            <i class="mdui-list-item-icon mdui-icon material-icons">list</i>
+            <div class="mdui-list-item-content">Timeline</div>
+        </li>
+
+    </ul>
+</div>
+
+<div class="back-block mdui-color-theme mdui-valign">
+    <div class="mdui-text-center mdui-center">
+        <h1 class="mdui-m-a-0 "></h1>
+    </div>
+</div>
+
+<div class="mdui-container" style="position: relative;top:-100px;">
+    <div class="mdui-row">
+        <div class="mdui-col-xs-12">
+            
+            <div class="timeline">
+                <div class="timeline-date">二月,2020</div>
+                <div class="timeline-conten">
+                    <div class="mdui-row">
+                        {-volist name="vo" key="post"}
+                        <div class="mdui-col-xs-12 mdui-col-sm-6">
+                            <div class="mdui-card">
+                                <div class="mdui-card-header">
+                                    <div class="mdui-card-header-title"></div>
+                                </div>
+                                <div class="mdui-card-content">
+                                    <h1 class="mdui-color-text-theme">
+                                        <a href=""></a>
+                                    </h1>
+                                </div>
+                            </div>
+                        </div>
+                        
+
+            <div class="timeline">
+                <div class="timeline-date">一月,2020</div>
+                <div class="timeline-conten">
+                    <div class="mdui-row">
+                        {-volist name="vo" key="post"}
+                        <div class="mdui-col-xs-12 mdui-col-sm-6">
+                            <div class="mdui-card">
+                                <div class="mdui-card-header">
+                                    <div class="mdui-card-header-title"></div>
+                                </div>
+                                <div class="mdui-card-content">
+                                    <h1 class="mdui-color-text-theme">
+                                        <a href=""></a>
+                                    </h1>
+                                </div>
+                            </div>
+                        </div>
+                        
+
+                    </div>
+                </div>
+            </div>
+            {-volist/}
+        </div>
+    </div>
+</div>
+
+<div class="bottom">
+    <div class="bottom-licenses mdui-p-y-2 mdui-color-theme-400" style="color: rgba(255, 255, 255, 0.6) !important;">
+        博客内容遵循 - <a target="_blank" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh">知识共享 署名 - 非商业性
+            - 相同方式共享 4.0
+            国际协议</a>
+    </div>
+    <div class="bottom-copyright mdui-p-y-2 mdui-color-theme-700" style="color: rgba(255, 255, 255, 0.6) !important;">
+        <div>藍某人 &copy; 2016-2020 · <a target="_blank" href="http://beian.miit.gov.cn/">桂ICP备16007573号-1</a>
+        </div>
+        <div style="margin-top: 0.5rem;">Powered By <a target="_blank" href="/">WyYBlogEditor</a> Theme <a
+                target="_blank" href="/">MDMY</a></div>
+    </div>
+</div>
+
+    
+    <script src="https://blog.kingsr.cc/assets/js/mdui.min.js"></script>
+    
+
+
+</body>
+
+</html>
