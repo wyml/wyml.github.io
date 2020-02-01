@@ -12,11 +12,35 @@
     
 <link rel="stylesheet" href="https://blog.kingsr.cc/assets/css/style.css">
 <style>
-    .content-heaer {
-        min-height: 210px;
-        color: #fff;
-        text-shadow: black;
+    .back-block {
+        height: 300px;
     }
+
+    .post-copyright {
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+
+    .post-copyright>.content {
+        margin-bottom: 1em;
+        padding: 20px 30px;
+        word-break: break-all;
+        color: #727272;
+        background: #f1f3fa;
+        border-radius: 30px 30px 0;
+    }
+
+    .timeline-date {
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        background: rgba(255, 255, 255, 0.2);
+        padding: 0.1rem;
+        padding-left: 0.3rem;
+        border-left: 3px solid #3f51b5;
+        font-size: 18px;
+    }
+
+    .timeline-content {}
 </style>
 
     <style>
@@ -59,7 +83,6 @@
         </div>
     </header>
     
-<!-- 默认抽屉栏在左侧 -->
 <div class="mdui-drawer mdui-color-white mdui-drawer-full-height" id="drawer">
     <div style="background: url(https://blog.kingsr.cc/assets/images/brand.jpg);">
         <div style="padding: 30px;">
@@ -73,7 +96,7 @@
     <ul class="mdui-list" mdui-collapse="{accordion: true}">
 
         <a href="/">
-            <li class="mdui-list-item mdui-ripple mdui-list-item-active">
+            <li class="mdui-list-item mdui-ripple">
                 <i class="mdui-list-item-icon mdui-icon material-icons">home</i>
                 <div class="mdui-list-item-content">Home</div>
             </li>
@@ -87,120 +110,56 @@
     </ul>
 </div>
 
-<div class="content-heaer mdui-color-indigo mdui-m-b-2 mdui-valign">
+<div class="back-block mdui-color-theme mdui-valign">
     <div class="mdui-text-center mdui-center">
-        <h1 class="mdui-typo-display-1 mdui-m-t-0 typing">WyY's Blog</h1>
-        <h5 class="mdui-typo-subheading-opacity">记录生活的美好,一起发现创造</h5>
+        <h1 class="mdui-m-a-0 "></h1>
     </div>
 </div>
 
-<div class="mdui-container">
-
-    
-    <div class="mdui-row mdui-center mdui-m-t-3">
-        <div class="mdui-col-xs-12 mdui-col-sm-6 mdui-col-offset-sm-3">
-            <div class="mdui-card mdui-shadow-1">
-                <div class="mdui-card-header" style="height: 0;">
-                    <div class="mdui-card-header-title" style="margin-left: 0;">2020-02-01 00:35:51</div>
-                </div>
-                <div class="mdui-card-content mdui-typo">
-                    <h1 style="margin-top: 0;">
-                        <a class="mdui-display-1" href="https://blog.kingsr.cc/articles/WyY食用方法.html">WyY食用方法</a>
-                    </h1>
-                    <div class="mdui-text-truncate">
-                        **详细使用教程来啦~**
-
-## 简介
-
-WyYE是一款用易语言配合JS编写的一款静态BLOG生成器。他的工作方式类似于Hexo，能够在一定情况下配合JS或者DLL配合生成静态博客。
-同时支持部署至Github、Gitee等Git托管网站上。
-
-## 如何使用
-
-### 0x00：配置文件
-
-打开/config文件夹，复制一份`.example.base.json`重命名为`base.json`并按照内容修改好。
-
-### 0x01：开始写作
-
-打开根目录下的`WyYBlogEditor.exe`主程序。在上方选择“写作中心”即可开始写作！写作完成后按`Ctrl+S`保存文章。**文件标题即为文章标题！**
-![1.png](https://i.loli.net/2020/02/01/xC9zwidU2sLghOZ.png)
-
-### 0x02：部署博客
-
-写作完成后关闭窗口返回主界面，点击主界面“站点管理>编译”按钮即可自动完成部署。需要注意：本功能需要Windows下安装Git并已经进行关联设置。
-![2.jpg](https://i.loli.net/2020/02/01/a6Pc3K8snyxAETV.jpg)
-
-### 0x03：小技巧
-
-在config目录下，conf.ini文件为程序配置文件，其中`ShowDOS`为显示DOS执行窗口*窗口仅可读*你可以将其设置为`ShowDOS=1`开启；`AbsoluteUrl=1`为将编译地址转为绝地地址，及将主题中的`https://blog.kingsr.cc/assets`渲染为`base.system.url`。
-
-![3.png](https://i.loli.net/2020/02/01/gbytDE4FiQxWuTS.png)
+<div class="mdui-container" style="position: relative;top:-100px;">
+    <div class="mdui-row">
+        <div class="mdui-col-xs-12">
+            {-volist name="timeline" key="vo"}
+            <div class="timeline">
+                <div class="timeline-date"></div>
+                <div class="timeline-conten">
+                    <div class="mdui-row">
+                        {-volist name="vo.posts" key="post"}
+                        <div class="mdui-col-xs-12 mdui-col-sm-6">
+                            <div class="mdui-card">
+                                <div class="mdui-card-header">
+                                    <div class="mdui-card-header-title"></div>
+                                </div>
+                            </div>
+                        </div>
+                        {-volist/}
                     </div>
-                    <a href="https://blog.kingsr.cc/articles/WyY食用方法.html">READ MORE</a>
                 </div>
-                <div class="mdui-divider"></div>
             </div>
+            {-volist/}
         </div>
     </div>
-    
+</div>
 
-    <div class="mdui-row mdui-center mdui-m-t-3">
-        <div class="mdui-col-xs-12 mdui-col-sm-6 mdui-col-offset-sm-3">
-            <div class="mdui-card mdui-shadow-1">
-                <div class="mdui-card-header" style="height: 0;">
-                    <div class="mdui-card-header-title" style="margin-left: 0;">2020-01-31 13:29:44</div>
-                </div>
-                <div class="mdui-card-content mdui-typo">
-                    <h1 style="margin-top: 0;">
-                        <a class="mdui-display-1" href="https://blog.kingsr.cc/articles/闲来无事，在家造轮子-WyYE.html">闲来无事，在家造轮子-WyYE</a>
-                    </h1>
-                    <div class="mdui-text-truncate">
-                        # WyYE
->WyYE是一款用易语言配合JS编写的一款静态BLOG生成器。他的工作方式类似于Hexo，能够在一定情况下配合JS或者DLL配合生成静态博客。 同时支持部署至Github、Gitee等Git托管网站上。
-
-## 前言
-没错！这就是我新造的轮子。最近肺炎的情况让我在家无所事事。刚好想写Blog，苦于我原来手贱，清空了我博客上的内容。。。于是就诞生了它！
-
-至于为什么不用Hexo，我只能说我真的用不习惯。而且主题各种卡死。
-
-## 构架
-WyYE采用易语言作为编写语言（懒得去弄其他的了）搭配JS进行渲染以及页面的构建。
-同时后续还会开通JS插件等等实用的功能。
-
-**这篇Blog就是用它生成的，并推送到了Github上**
-
-## 开发过程吐槽
-### 0x00
-首先我想用WEBUI作为主要的UI，就发现易语言对这个方面的配合实在不行。好在能配合“浏览器”组件，实现简单的UI搭建。总算在一个晚上的摸索之后有了一个确切的方案。
-
-### 0x01
-模板渲染。这个真的无力吐槽啊！对于易语言来说，渲染数据真的太困难了。应该也是所有静态编程的通病吧。
-因为无法使用直接的数组循环以及变量搭配，我必须将所有的变量通过Json的方式转换，最后渲染。
-
-## 截图预览
-![main.png](https://i.loli.net/2020/01/31/wHvKAmCpxk9Mneq.png)
-![editor.png](https://i.loli.net/2020/01/31/bOVkLKmwYB7QIDz.png)
-![dos.png](https://i.loli.net/2020/01/31/ReQg2cxdOXVwFzv.png)
-![目录结构.png](https://i.loli.net/2020/01/31/Ytgm4hxoaQEXDuf.png)
-
-## 下载
-[网盘下载](https://pan.kingsr.cc/s/9jsmd70c "网盘下载")
-                    </div>
-                    <a href="https://blog.kingsr.cc/articles/闲来无事，在家造轮子-WyYE.html">READ MORE</a>
-                </div>
-                <div class="mdui-divider"></div>
-            </div>
-        </div>
+<div class="bottom">
+    <div class="bottom-licenses mdui-p-y-2 mdui-color-theme-400" style="color: rgba(255, 255, 255, 0.6) !important;">
+        博客内容遵循 - <a target="_blank" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh">知识共享 署名 - 非商业性
+            - 相同方式共享 4.0
+            国际协议</a>
     </div>
-    
-
-
+    <div class="bottom-copyright mdui-p-y-2 mdui-color-theme-700" style="color: rgba(255, 255, 255, 0.6) !important;">
+        <div>藍某人 &copy; 2016-2020 · <a target="_blank" href="http://beian.miit.gov.cn/">桂ICP备16007573号-1</a>
+        </div>
+        <div style="margin-top: 0.5rem;">Powered By <a target="_blank" href="/">WyYBlogEditor</a> Theme <a
+                target="_blank" href="/">MDMY</a></div>
+    </div>
 </div>
 
     
     <script src="https://blog.kingsr.cc/assets/js/mdui.min.js"></script>
     
+
+
 </body>
 
 </html>
