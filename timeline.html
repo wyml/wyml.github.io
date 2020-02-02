@@ -39,7 +39,6 @@
         border-left: 3px solid #3f51b5;
         font-size: 18px;
     }
-
 </style>
 
     <style>
@@ -81,6 +80,53 @@
             <div class="mdui-toolbar-spacer"></div>
         </div>
     </header>
+    <!-- 默认抽屉栏在左侧 -->
+    <div class="mdui-drawer mdui-color-white mdui-drawer-full-height" id="drawer">
+        <div style="background: url(https://blog.kingsr.cc/assets/images/brand.jpg);">
+            <div style="padding: 30px;">
+                <img style="border:2px solid white;" class="mdui-img-circle" width="84" src="https://q1.qlogo.cn/g?b=qq&nk=1143524493&s=5"
+                    alt="avatar">
+                <h1 class="mdui-typo-headline mdui-text-color-white-text">藍某人</h1>
+                <a href="mailto:i@kingsr.cc">
+                    <h5 class="mdui-subheadline" style="margin-top: 0;">i@kingsr.cc</h5>
+                </a>
+            </div>
+        </div>
+        <ul class="mdui-list" mdui-collapse="{accordion: true}">
+
+            <a href="/">
+                <li id="home" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">home</i>
+                    <div class="mdui-list-item-content">Home</div>
+                </li>
+            </a>
+
+            <a href="/timeline.html">
+                <li id="timeline" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">list</i>
+                    <div class="mdui-list-item-content">Timeline</div>
+                </li>
+            </a>
+
+            
+            <a href="/pages/links.html.html">
+                <li id="Links" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">link</i>
+                    <div class="mdui-list-item-content">Links</div>
+                </li>
+            </a>
+            
+
+            <a href="/pages/about.html.html">
+                <li id="About" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">info</i>
+                    <div class="mdui-list-item-content">About</div>
+                </li>
+            </a>
+            
+
+        </ul>
+    </div>
     
 <div class="mdui-drawer mdui-color-white mdui-drawer-full-height" id="drawer">
     <div style="background: url(https://blog.kingsr.cc/assets/images/brand.jpg);">
@@ -121,62 +167,21 @@
     <div class="mdui-row">
         <div class="mdui-col-xs-12">
             
-            <div class="timeline">
-                <div class="timeline-date">二月,2020</div>
-                <div class="timeline-conten">
-                    <div class="mdui-row">
-                        {-volist name="vo" key="post"}
-                        <div class="mdui-col-xs-12 mdui-col-sm-6">
-                            <div class="mdui-card">
-                                <div class="mdui-card-header">
-                                    <div class="mdui-card-header-title"></div>
-                                </div>
-                                <div class="mdui-card-content">
-                                    <h1 class="mdui-color-text-theme">
-                                        <a href=""></a>
-                                    </h1>
-                                </div>
-                            </div>
-                        </div>
-                        
+            <a href="/pages/links.html.html">
+                <li id="Links" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">link</i>
+                    <div class="mdui-list-item-content">Links</div>
+                </li>
+            </a>
+            
 
-            <div class="timeline">
-                <div class="timeline-date">二月,2020</div>
-                <div class="timeline-conten">
-                    <div class="mdui-row">
-                        {-volist name="vo" key="post"}
-                        <div class="mdui-col-xs-12 mdui-col-sm-6">
-                            <div class="mdui-card">
-                                <div class="mdui-card-header">
-                                    <div class="mdui-card-header-title"></div>
-                                </div>
-                                <div class="mdui-card-content">
-                                    <h1 class="mdui-color-text-theme">
-                                        <a href=""></a>
-                                    </h1>
-                                </div>
-                            </div>
-                        </div>
-                        
-
-            <div class="timeline">
-                <div class="timeline-date">一月,2020</div>
-                <div class="timeline-conten">
-                    <div class="mdui-row">
-                        {-volist name="vo" key="post"}
-                        <div class="mdui-col-xs-12 mdui-col-sm-6">
-                            <div class="mdui-card">
-                                <div class="mdui-card-header">
-                                    <div class="mdui-card-header-title"></div>
-                                </div>
-                                <div class="mdui-card-content">
-                                    <h1 class="mdui-color-text-theme">
-                                        <a href=""></a>
-                                    </h1>
-                                </div>
-                            </div>
-                        </div>
-                        
+            <a href="/pages/about.html.html">
+                <li id="About" class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">info</i>
+                    <div class="mdui-list-item-content">About</div>
+                </li>
+            </a>
+            
 
                     </div>
                 </div>
@@ -203,7 +208,12 @@
     
     <script src="https://blog.kingsr.cc/assets/js/mdui.min.js"></script>
     
-
+<script>
+    let $$ = mdui.JQ;
+    $$(function () {
+        $$('#home').toggleClass("mdui-list-item-active");
+    })
+</script>
 
 </body>
 
