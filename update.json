@@ -1,0 +1,9 @@
+{
+    "versionList": [{
+        "order": 1,
+        "version": 20200202,
+        "update": "修复了一些BUG：\n1.修复volist嵌套出错问题，原来会导致多个volist时渲染重复\n2.修复了页面无用的按钮\n增加了：\n1.Page的渲染\n2.增加了版本更新",
+        "download": "https://qiniu-cdn.kingsr.cc/20200202.zip"
+    }]
+
+}
