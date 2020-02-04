@@ -1,6 +1,8 @@
 >此Blog使用WyY Blog Editor生成并部署
 >
 >下载地址：[Download](https://pan.kingsr.cc/s/9jsmd70c)
+>
+>文档地址：[WyYBE文档](https://be.kingsr.cc/)
 
 # WyY Blog Editor
 
