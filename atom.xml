@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title><![CDATA[WyY'sBlog]]></title>
+        <link>https://blog.kingsr.cc</link>
+        <atom:link href="" rel="self" type="application/rss+xml" />
+        <description><![CDATA[]]></description>
+        <generator>WyYBlogEditor</generator>
+        <webMaster>i@kinngsr.cc (Kingsr)</webMaster>
+        <language>zh-CN</language>
+        <lastBuildDate>Wed, 5-Feb-2020 20:52:35 GMT</lastBuildDate>
+        <ttl>50</ttl>
+        <item>
+      <title><![CDATA[2019总结]]></title>
+      <description><![CDATA[# 2019年的所思所想
+
+>过去的一年，经历了许多、失去了许多，但也获得了许多。回望一年的生活。开年留下的F]]></description>
+      <pubDate>Mon, 3-Feb-2020 20:53:33 GMT</pubDate>
+      <guid isPermaLink="true">https://blog.kingsr.cc/articles/2019总结.html</guid>
+      <link>https://blog.kingsr.cc/articles/2019总结.html</link>
+      <author><![CDATA[Kingsr]]></author>
+</item>
+<item>
+      <title><![CDATA[WyY食用方法]]></title>
+      <description><![CDATA[**详细使用教程来啦~**
+
+## 简介
+
+WyYE是一款用易语言配合JS编写的一款静态BLOG生成器。他的工作方式类似于]]></description>
+      <pubDate>Sat, 1-Feb-2020 23:57:56 GMT</pubDate>
+      <guid isPermaLink="true">https://blog.kingsr.cc/articles/WyY食用方法.html</guid>
+      <link>https://blog.kingsr.cc/articles/WyY食用方法.html</link>
+      <author><![CDATA[Kingsr]]></author>
+</item>
+<item>
+      <title><![CDATA[闲来无事，在家造轮子-WyYE]]></title>
+      <description><![CDATA[# WyYE
+>WyYE是一款用易语言配合JS编写的一款静态BLOG生成器。他的工作方式类似于Hexo，能够在一定情况下配]]></description>
+      <pubDate>Fri, 31-Jan-2020 13:29:44 GMT</pubDate>
+      <guid isPermaLink="true">https://blog.kingsr.cc/articles/闲来无事，在家造轮子-WyYE.html</guid>
+      <link>https://blog.kingsr.cc/articles/闲来无事，在家造轮子-WyYE.html</link>
+      <author><![CDATA[Kingsr]]></author>
+</item>
+
+    </channel>
+</rss>
