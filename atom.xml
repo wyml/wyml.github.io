@@ -8,7 +8,7 @@
         <generator>WyYBlogEditor</generator>
         <webMaster>i@kinngsr.cc (Kingsr)</webMaster>
         <language>zh-CN</language>
-        <lastBuildDate>Thu, 6-Feb-2020 13:40:37 GMT</lastBuildDate>
+        <lastBuildDate>Sun, 9-Feb-2020 19:33:44 GMT</lastBuildDate>
         <ttl>50</ttl>
         <item>
       <title><![CDATA[2019总结]]></title>
@@ -18,6 +18,18 @@
       <pubDate>Mon, 3-Feb-2020 20:53:33 GMT</pubDate>
       <guid isPermaLink="true">https://blog.kingsr.cc/articles/2019总结.html</guid>
       <link>https://blog.kingsr.cc/articles/2019总结.html</link>
+      <author><![CDATA[Kingsr]]></author>
+</item>
+<item>
+      <title><![CDATA[EUC-E统一模块管理器]]></title>
+      <description><![CDATA[# EUC -  易语言统一模块管理器
+
+## 简介
+
+EUC易语言统一模块管理是一款类似与NPM、Composer的易语言模]]></description>
+      <pubDate>Sun, 9-Feb-2020 19:33:37 GMT</pubDate>
+      <guid isPermaLink="true">https://blog.kingsr.cc/articles/EUC-E统一模块管理器.html</guid>
+      <link>https://blog.kingsr.cc/articles/EUC-E统一模块管理器.html</link>
       <author><![CDATA[Kingsr]]></author>
 </item>
 <item>

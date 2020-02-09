@@ -185,6 +185,102 @@
         <div class="mdui-col-xs-12 mdui-col-sm-6 mdui-col-offset-sm-3">
             <div class="mdui-card mdui-shadow-1">
                 <div class="mdui-card-header" style="height: 0;">
+                    <div class="mdui-card-header-title" style="margin-left: 0;">2020-02-09 19:32:45</div>
+                </div>
+                <div class="mdui-card-content mdui-typo">
+                    <h1 style="margin-top: 0;">
+                        <a class="mdui-display-1" href="https://blog.kingsr.cc/articles/EUC-E统一模块管理器.html">EUC-E统一模块管理器</a>
+                    </h1>
+                    <div class="mdui-text-truncate">
+                        # EUC -  易语言统一模块管理器
+
+## 简介
+
+EUC易语言统一模块管理是一款类似与NPM、Composer的易语言模块管理工具。依赖于简单的配置文件。即可将依赖简单写出，作为源码传递时，仅需要执行`euc install`命令即可。
+
+简单来说就是：**安装模块依赖仅需一步**
+
+## 工作方式
+
+EUC会读取源码目录下的`_eucconf.json`根据其内部的参数，自动下载模块。如果你安装了易语言助手，即可一键引入模块！
+
+## EUC模块来源
+
+EUC模块来源于网络收集以及作者上传。如果你有好的模块供大家使用。那么你可以到EUC模块托管网站上传。
+
+**[EUC-上传中心](https://euc.kingsr.cc/model/create.html)**
+
+## 安全性
+
+模块下载依赖于你`_eucconf.json`文件，其中的hash值为模块MD5值，此值在你编写json文件时可以唯一确定或文件中的`call_name`也为唯一值。在引用时，请将`call_name`或`hash`确保正确即可。
+
+同时对于有问题、后门、暗庄的模块，后期将推出举报功能，查实后删除。
+
+对于想要的依赖，你可以到EUC模块cha询寻找到你需要的模块：[EUC - 模块查询](https://euc.kingsr.cc/search.html)
+
+同时我们将`EUC主程序`、`EUC易语言助手插件`、`EUC管理后台`开源，供大家审查!
+
+## 压缩包文件说明
+
+* 易助手插件打包.exe：易语言助手插件打包器
+* _eucconf.json：EUC配置文件示例
+* test.e：测试用E文件
+* main.e：EUC主程序源码
+* EUC.exe：EUC主程序
+* EUC.etools：易助手EUC插件
+* EUC.e：EUC易助手插件源码
+
+## 使用方式
+
+### EUC主文件使用方式
+
+EUC.exe主文件为命令行文件，你可以解压后，将其放置指定目录后，编辑系统环境变量获得`EUC`指令，也可以将命令行进入EUC所在目录后，使用`EUC.exe`使用
+
+目前可用命令有两条：
+
+* `euc install path\_eucconf.json`：此将根据指定的`_eucconf.json`将模块下载至`path\.eucmodel\`目录下
+* `euc install path\_eucconf.json call_nam`：将根据`call_name`下载模块，同时将依赖信息写入`_eucconf.json`文件
+
+### EUC易语言助手插件使用方式
+
+下载后，双击`EUC.etools`安装插件，随后启用。
+将`_eucconf.json`文件与源码放置在同一目录，点击易语言IDE菜单栏中的`EUC-引入`即可一键下载并引入！
+
+>注意：易语言版本>=5.6
+>同时将会写出一个`EUC.exe`在根目录
+
+## 文件下载地址
+
+* [EUC源文件(蓝奏云)](https://www.lanzous.com/b00z7uwqb)
+* [EUC模块管理平台(码云)](https://gitee.com/MlTreeGroup/euc)
+
+## EUC管理平台
+
+>此平台我自建，使用Cloundflare加速
+>模块下载使用七牛云加速
+>此项目全部永久免费！
+
+[EUC - 易语言统一模块管理](https://euc.kingsr.cc/)
+
+## 关于
+
+如果你对EUC有什么意见或建议，欢迎加入EUC讨论群
+
+QQ群：1046639144
+
+                    </div>
+                    <a href="https://blog.kingsr.cc/articles/EUC-E统一模块管理器.html">READ MORE</a>
+                </div>
+                <div class="mdui-divider"></div>
+            </div>
+        </div>
+    </div>
+    
+
+    <div class="mdui-row mdui-center mdui-m-t-3">
+        <div class="mdui-col-xs-12 mdui-col-sm-6 mdui-col-offset-sm-3">
+            <div class="mdui-card mdui-shadow-1">
+                <div class="mdui-card-header" style="height: 0;">
                     <div class="mdui-card-header-title" style="margin-left: 0;">2020-02-01 00:35:51</div>
                 </div>
                 <div class="mdui-card-content mdui-typo">
