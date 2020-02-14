@@ -8,7 +8,7 @@
         <generator>WyYBlogEditor</generator>
         <webMaster>i@kinngsr.cc (Kingsr)</webMaster>
         <language>zh-CN</language>
-        <lastBuildDate>Sun, 9-Feb-2020 19:33:44 GMT</lastBuildDate>
+        <lastBuildDate>Fri, 14-Feb-2020 20:33:24 GMT</lastBuildDate>
         <ttl>50</ttl>
         <item>
       <title><![CDATA[2019总结]]></title>
@@ -42,6 +42,15 @@ WyYE是一款用易语言配合JS编写的一款静态BLOG生成器。他的工�
       <pubDate>Sat, 1-Feb-2020 23:57:56 GMT</pubDate>
       <guid isPermaLink="true">https://blog.kingsr.cc/articles/WyY食用方法.html</guid>
       <link>https://blog.kingsr.cc/articles/WyY食用方法.html</link>
+      <author><![CDATA[Kingsr]]></author>
+</item>
+<item>
+      <title><![CDATA[你的现实，就是被人的恶趣味。]]></title>
+      <description><![CDATA[# 你的现实，就是被人的恶趣味。
+]]></description>
+      <pubDate>Fri, 14-Feb-2020 20:33:14 GMT</pubDate>
+      <guid isPermaLink="true">https://blog.kingsr.cc/articles/你的现实，就是被人的恶趣味。.html</guid>
+      <link>https://blog.kingsr.cc/articles/你的现实，就是被人的恶趣味。.html</link>
       <author><![CDATA[Kingsr]]></author>
 </item>
 <item>
